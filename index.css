@@ -1,0 +1,57 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.splash {
+    display: none;
+}
+
+[ng-cloak].splash {
+    display: block !important;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loading-bar {
+    display: inline-block;
+    width: 10px;
+    height: 60px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(1) {
+    background-color: #4285f4;
+    animation-delay: 0;
+}
+
+.loading-bar:nth-child(2) {
+    background-color: #f4b400;
+    animation-delay: 0.09s;
+}
+
+.loading-bar:nth-child(3) {
+    background-color: #0f9d58;
+    animation-delay: .18s;
+}
+
+.loading-bar:nth-child(4) {
+    background-color: #db4437;
+    animation-delay: .27s;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 2.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+}

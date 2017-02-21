@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-strict-di md-theme="base" class="non-theme-base">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>Form Designer</title>
+
+        <link href="index.css" rel="stylesheet">
+   </head>
+
+    <body layout="column" ng-app="non.container.form-designer">
+        <!-- Show Spinner when loading-->
+        <div class="splash" ng-cloak>
+            <div class="loading">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        <div class="screen-content" ui-view="main" layout="column" flex ng-cloak></div>
+    <script src="vendor.bundle.js?8756bdc840589077602d"></script><script src="non.bundle.js?8756bdc840589077602d"></script><script src="main.bundle.js?8756bdc840589077602d"></script></body>
+</html>
